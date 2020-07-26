@@ -23,4 +23,8 @@ export class AppComponent {
       this.model.items.push(new TodoItem(newItem,false));
     }
   }
+
+  getTodoYesItems(){
+    return this.model.items.filter(item => item.done);
+  }
 }
